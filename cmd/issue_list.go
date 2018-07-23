@@ -28,7 +28,7 @@ var issueListCmd = &cobra.Command{
 		issues, err := lab.IssueList(rn, &gitlab.ListProjectIssuesOptions{
 			ListOptions: gitlab.ListOptions{
 				Page:    int(page),
-				PerPage: 10,
+				PerPage: 1000,
 			},
 			Labels:  issueLabels,
 			State:   &issueState,

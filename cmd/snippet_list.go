@@ -21,7 +21,7 @@ var snippetListCmd = &cobra.Command{
 		}
 		listOpts := gitlab.ListOptions{
 			Page:    int(page),
-			PerPage: 10,
+			PerPage: 1000,
 		}
 
 		// See if we're in a git repo or if global is set to determine

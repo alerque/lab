@@ -385,7 +385,7 @@ func CIJobs(pid interface{}, branch string) ([]*gitlab.Job, error) {
 	target := pipelines[0].ID
 	jobs, _, err := lab.Jobs.ListPipelineJobs(pid, target, &gitlab.ListJobsOptions{
 		ListOptions: gitlab.ListOptions{
-			PerPage: 500,
+			PerPage: 1000,
 		},
 	})
 	if err != nil {

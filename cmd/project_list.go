@@ -25,7 +25,7 @@ var projectListCmd = &cobra.Command{
 		projects, err := lab.ProjectList(&gitlab.ListProjectsOptions{
 			ListOptions: gitlab.ListOptions{
 				Page:    int(page),
-				PerPage: 10,
+				PerPage: 1000,
 			},
 			Simple:  gitlab.Bool(true),
 			OrderBy: gitlab.String("id"),

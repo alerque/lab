@@ -51,7 +51,7 @@ func init() {
 		&mrState, "state", "s", "opened",
 		"filter merge requests by state (opened/closed/merged)")
 	listCmd.Flags().IntVarP(
-		&mrPerPage, "per-page", "n", 10,
+		&mrPerPage, "per-page", "n", 1000,
 		"preset number of returned merge requests")
 	mrCmd.AddCommand(listCmd)
 }

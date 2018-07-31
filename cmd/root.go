@@ -14,8 +14,8 @@ import (
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	gitconfig "github.com/tcnksm/go-gitconfig"
-	"github.com/zaquestion/lab/internal/git"
-	lab "github.com/zaquestion/lab/internal/gitlab"
+	"github.com/alerque/lab/internal/git"
+	lab "github.com/alerque/lab/internal/gitlab"
 )
 
 // RootCmd represents the base command when called without any subcommands

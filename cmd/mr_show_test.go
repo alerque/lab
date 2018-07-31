@@ -24,13 +24,13 @@ func Test_mrShow(t *testing.T) {
 ===================================
 This MR is to remain open for testing the `+"`lab mr list`"+` functionality
 -----------------------------------
-Project: zaquestion/test
+Project: alerque/test
 Branches: mrtest->master
 Status: Open
-Assignee: zaquestion
-Author: zaquestion
+Assignee: alerque
+Author: alerque
 Milestone: 1.0
 Labels: documentation
-WebURL: https://gitlab.com/zaquestion/test/merge_requests/1
+WebURL: https://gitlab.com/alerque/test/merge_requests/1
 `)
 }

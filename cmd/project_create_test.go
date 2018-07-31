@@ -9,8 +9,8 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
-	"github.com/zaquestion/lab/internal/git"
-	lab "github.com/zaquestion/lab/internal/gitlab"
+	"github.com/alerque/lab/internal/git"
+	lab "github.com/alerque/lab/internal/gitlab"
 )
 
 func Test_projectCreateCmd(t *testing.T) {

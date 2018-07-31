@@ -15,8 +15,8 @@ import (
 	"github.com/lunixbochs/vtclean"
 	"github.com/xanzy/go-gitlab"
 
-	"github.com/zaquestion/lab/internal/git"
-	lab "github.com/zaquestion/lab/internal/gitlab"
+	"github.com/alerque/lab/internal/git"
+	lab "github.com/alerque/lab/internal/gitlab"
 )
 
 var (
@@ -36,7 +36,7 @@ var ciViewCmd = &cobra.Command{
 
 Supports vi style (hjkl,Gg) bindings and arrow keys for navigating jobs and logs.
 
-Feedback Encouraged!: https://github.com/zaquestion/lab/issues`,
+Feedback Encouraged!: https://github.com/alerque/lab/issues`,
 	Run: func(cmd *cobra.Command, args []string) {
 		a := tview.NewApplication()
 		defer recoverPanic(a)

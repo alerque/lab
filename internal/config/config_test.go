@@ -24,7 +24,7 @@ func TestNewConfig(t *testing.T) {
 		os.Stdout = w
 
 		var buf bytes.Buffer
-		fmt.Fprintln(&buf, "https://gitlab.zaquestion.io")
+		fmt.Fprintln(&buf, "https://gitlab.alerque.io")
 		fmt.Fprintln(&buf, "zaq")
 
 		oldreadPassword := readPassword
@@ -55,7 +55,7 @@ func TestNewConfig(t *testing.T) {
 
 		assert.Contains(t, out, "Enter default GitLab host (default: https://gitlab.com): ")
 		assert.Contains(t, out, "Enter default GitLab user:")
-		assert.Contains(t, out, "Create a token here: https://gitlab.zaquestion.io/profile/personal_access_tokens\nEnter default GitLab token (scope: api):")
+		assert.Contains(t, out, "Create a token here: https://gitlab.alerque.io/profile/personal_access_tokens\nEnter default GitLab token (scope: api):")
 
 		cfg, err := os.Open(path.Join(testconf, "lab.hcl"))
 		if err != nil {
@@ -67,7 +67,7 @@ func TestNewConfig(t *testing.T) {
 			t.Fatal(err)
 		}
 		assert.Equal(t, string(cfgData), `"core" = {
-  "host" = "https://gitlab.zaquestion.io"
+  "host" = "https://gitlab.alerque.io"
 
   "token" = "abcde12345"
 

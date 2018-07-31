@@ -136,7 +136,7 @@ func CurrentBranch() (string, error) {
 }
 
 // PathWithNameSpace returns the owner/repository for the current repo
-// Such as zaquestion/lab
+// Such as alerque/lab
 // Respects GitLab subgroups (https://docs.gitlab.com/ce/user/group/subgroups/)
 func PathWithNameSpace(remote string) (string, error) {
 	remoteURL, err := gitconfig.Local("remote." + remote + ".url")

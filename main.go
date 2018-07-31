@@ -9,9 +9,9 @@ import (
 	"strings"
 
 	"github.com/spf13/viper"
-	"github.com/zaquestion/lab/cmd"
-	"github.com/zaquestion/lab/internal/config"
-	lab "github.com/zaquestion/lab/internal/gitlab"
+	"github.com/alerque/lab/cmd"
+	"github.com/alerque/lab/internal/config"
+	lab "github.com/alerque/lab/internal/gitlab"
 )
 
 // version gets set on releases during build by goreleaser.

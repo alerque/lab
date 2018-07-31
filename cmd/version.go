@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
-	"github.com/zaquestion/lab/internal/git"
+	"github.com/alerque/lab/internal/git"
 )
 
 // Version is set by main during build

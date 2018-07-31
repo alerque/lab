@@ -10,7 +10,7 @@ import (
 )
 
 func TestMain(m *testing.M) {
-	err := os.Chdir(os.ExpandEnv("$GOPATH/src/github.com/zaquestion/lab/testdata"))
+	err := os.Chdir(os.ExpandEnv("$GOPATH/src/github.com/alerque/lab/testdata"))
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -22,7 +22,7 @@ func TestGitDir(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	expectedDir := os.ExpandEnv("$GOPATH/src/github.com/zaquestion/lab/testdata/.git")
+	expectedDir := os.ExpandEnv("$GOPATH/src/github.com/alerque/lab/testdata/.git")
 	require.Equal(t, expectedDir, dir)
 }
 
@@ -31,7 +31,7 @@ func TestWorkingDir(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	expectedDir := os.ExpandEnv("$GOPATH/src/github.com/zaquestion/lab/testdata")
+	expectedDir := os.ExpandEnv("$GOPATH/src/github.com/alerque/lab/testdata")
 	require.Equal(t, expectedDir, dir)
 }
 
@@ -80,67 +80,67 @@ func TestPathWithNameSpace(t *testing.T) {
 		{
 			desc:        "ssh",
 			remote:      "origin",
-			expected:    "zaquestion/test",
+			expected:    "alerque/test",
 			expectedErr: "",
 		},
 		{
 			desc:        "http",
 			remote:      "origin-http",
-			expected:    "zaquestion/test",
+			expected:    "alerque/test",
 			expectedErr: "",
 		},
 		{
 			desc:        "https",
 			remote:      "origin-https",
-			expected:    "zaquestion/test",
+			expected:    "alerque/test",
 			expectedErr: "",
 		},
 		{
 			desc:        "https://token@gitlab.com/org/repo",
 			remote:      "origin-https-token",
-			expected:    "zaquestion/test",
+			expected:    "alerque/test",
 			expectedErr: "",
 		},
 		{
 			desc:        "git://",
 			remote:      "origin-git",
-			expected:    "zaquestion/test",
+			expected:    "alerque/test",
 			expectedErr: "",
 		},
 		{
 			desc:        "ssh://",
 			remote:      "origin-ssh-alt",
-			expected:    "zaquestion/test",
+			expected:    "alerque/test",
 			expectedErr: "",
 		},
 		{
 			desc:        "no .git suffix",
 			remote:      "origin-no_dot_git",
-			expected:    "zaquestion/test",
+			expected:    "alerque/test",
 			expectedErr: "",
 		},
 		{
 			desc:        "subdfolders-ssh",
 			remote:      "origin-subfolder-ssh",
-			expected:    "zaquestion/sub/folder/test",
+			expected:    "alerque/sub/folder/test",
 			expectedErr: "",
 		},
 		{
 			desc:        "subdfolders-git",
 			remote:      "origin-subfolder-git",
-			expected:    "zaquestion/sub/folder/test",
+			expected:    "alerque/sub/folder/test",
 			expectedErr: "",
 		},
 		{
 			desc:        "ssh-custom-port",
 			remote:      "origin-custom-port",
-			expected:    "zaquestion/test",
+			expected:    "alerque/test",
 			expectedErr: "",
 		},
 		{
 			desc:        "ssh-subfolder-custom-port",
 			remote:      "origin-subfolder-custom-port",
-			expected:    "zaquestion/sub/folder/test",
+			expected:    "alerque/sub/folder/test",
 			expectedErr: "",
 		},
 		{

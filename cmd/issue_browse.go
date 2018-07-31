@@ -8,7 +8,7 @@ import (
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/zaquestion/lab/internal/browser"
+	"github.com/alerque/lab/internal/browser"
 )
 
 var browse = browser.Open

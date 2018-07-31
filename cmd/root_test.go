@@ -18,8 +18,8 @@ import (
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/zaquestion/lab/internal/git"
-	lab "github.com/zaquestion/lab/internal/gitlab"
+	"github.com/alerque/lab/internal/git"
+	lab "github.com/alerque/lab/internal/gitlab"
 )
 
 func TestMain(m *testing.M) {
@@ -92,7 +92,7 @@ func TestRootGitCmd(t *testing.T) {
 	cmd := exec.Command("../lab_bin", "log", "-n", "1")
 	b, _ := cmd.CombinedOutput()
 	require.Contains(t, string(b), `commit 09b519cba018b707c98fc56e37df15806d89d866
-Author: Zaq? Wiedmann <zaquestion@gmail.com>
+Author: Zaq? Wiedmann <alerque@gmail.com>
 Date:   Sun Apr 1 19:40:47 2018 -0700
 
     (ci) jobs with interleaved sleeps and prints`)
@@ -262,7 +262,7 @@ func Test_parseArgs(t *testing.T) {
 		{
 			Name:           "No Args",
 			Args:           nil,
-			ExpectedString: "zaquestion/test",
+			ExpectedString: "alerque/test",
 			ExpectedInt:    0,
 			ExpectedErr:    "",
 		},
@@ -283,7 +283,7 @@ func Test_parseArgs(t *testing.T) {
 		{
 			Name:           "1 arg page",
 			Args:           []string{"100"},
-			ExpectedString: "zaquestion/test",
+			ExpectedString: "alerque/test",
 			ExpectedInt:    100,
 			ExpectedErr:    "",
 		},
@@ -297,7 +297,7 @@ func Test_parseArgs(t *testing.T) {
 		{
 			Name:           "2 arg remote page",
 			Args:           []string{"origin", "100"},
-			ExpectedString: "zaquestion/test",
+			ExpectedString: "alerque/test",
 			ExpectedInt:    100,
 			ExpectedErr:    "",
 		},

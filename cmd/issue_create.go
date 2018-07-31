@@ -11,8 +11,8 @@ import (
 
 	"github.com/spf13/cobra"
 	"github.com/xanzy/go-gitlab"
-	"github.com/zaquestion/lab/internal/git"
-	lab "github.com/zaquestion/lab/internal/gitlab"
+	"github.com/alerque/lab/internal/git"
+	lab "github.com/alerque/lab/internal/gitlab"
 )
 
 var issueCreateCmd = &cobra.Command{

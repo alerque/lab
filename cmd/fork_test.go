@@ -8,7 +8,7 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
-	lab "github.com/zaquestion/lab/internal/gitlab"
+	lab "github.com/alerque/lab/internal/gitlab"
 )
 
 func Test_fork(t *testing.T) {
@@ -20,7 +20,7 @@ func Test_fork(t *testing.T) {
 	os.Remove(path.Join(repo, ".git/config"))
 
 	cmd := exec.Command("git", "remote", "add", "origin",
-		"git@gitlab.com:zaquestion/fork_test")
+		"git@gitlab.com:alerque/fork_test")
 	cmd.Dir = repo
 	err := cmd.Run()
 	if err != nil {
@@ -69,7 +69,7 @@ func Test_determineForkRemote(t *testing.T) {
 		project  string
 		expected string
 	}{
-		{"project is forked from repo", "zaquestion", "lab-testing"},
+		{"project is forked from repo", "alerque", "lab-testing"},
 		{"project is user", "lab-testing", "upstream"},
 	}
 

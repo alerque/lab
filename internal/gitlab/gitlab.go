@@ -16,7 +16,7 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/xanzy/go-gitlab"
-	"github.com/zaquestion/lab/internal/git"
+	"github.com/alerque/lab/internal/git"
 )
 
 var (

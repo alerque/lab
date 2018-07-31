@@ -7,8 +7,8 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/tcnksm/go-gitconfig"
 	"github.com/xanzy/go-gitlab"
-	"github.com/zaquestion/lab/internal/git"
-	lab "github.com/zaquestion/lab/internal/gitlab"
+	"github.com/alerque/lab/internal/git"
+	lab "github.com/alerque/lab/internal/gitlab"
 )
 
 // mrCheckoutConfig holds configuration values for calls to lab mr checkout

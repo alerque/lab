@@ -5,8 +5,8 @@ import (
 
 	"github.com/spf13/cobra"
 	gitlab "github.com/xanzy/go-gitlab"
-	"github.com/zaquestion/lab/internal/git"
-	lab "github.com/zaquestion/lab/internal/gitlab"
+	"github.com/alerque/lab/internal/git"
+	lab "github.com/alerque/lab/internal/gitlab"
 )
 
 // ciRunCmd represents the run command

@@ -24,14 +24,14 @@ func Test_issueShow(t *testing.T) {
 ===================================
 
 -----------------------------------
-Project: zaquestion/test
+Project: alerque/test
 Status: Open
-Assignees: zaquestion, lab-testing
+Assignees: alerque, lab-testing
 Author: lab-testing
 Milestone: 1.0
 Due Date: 2018-01-01 00:00:00 +0000 UTC
 Time Stats: Estimated 1w, Spent 1d
 Labels: bug
-WebURL: https://gitlab.com/zaquestion/test/issues/1
+WebURL: https://gitlab.com/alerque/test/issues/1
 `)
 }

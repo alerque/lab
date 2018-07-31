@@ -79,7 +79,7 @@ func Test_mrCheckoutCmd_track(t *testing.T) {
 		t.Fatal(err)
 	}
 	remotes := string(gitOut)
-	require.Contains(t, remotes, "zaquestion	git@gitlab.com:zaquestion/test.git")
+	require.Contains(t, remotes, "alerque	git@gitlab.com:alerque/test.git")
 }
 
 func Test_mrCheckoutCmdRunWithDifferentName(t *testing.T) {
